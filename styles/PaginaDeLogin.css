@@ -4,6 +4,7 @@
   background-color: var(--cinza-escuro);
   padding: 2em;
   border-radius: 32px;
+  height: 90vh;
 }
 
 .container-login form {
@@ -14,7 +15,7 @@
 
 /* Estilos do subtitulo */
 .form__texto {
-  margin: 1.5em 0 2.5em 0;
+  margin: 1em;
   font-weight: 400;
   font-size: 22px;
   color: #fff;
@@ -45,7 +46,7 @@
   border-radius: 8px;
   border: none;
   font-family: var(--fonte);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   margin: 2em 0;
   cursor: pointer;
