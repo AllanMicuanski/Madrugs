@@ -1,5 +1,5 @@
 :root {
-  --fonte: "Prompt", sans-serif;
+  --fonte: 'Prompt', sans-serif;
   --grafite: #266f7e;
   --verde-petroleo: #132e35;
   --grafite: #266f7e;
@@ -12,19 +12,47 @@
   --preto: #000000f5;
 }
 
+.chuvaContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/rain.png);
+  animation: rain 0.2s linear infinite;
+  background-color: #000000;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 10% 1000%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: var(--fonte);
-  background: url("../img/Barril.png") left 10rem top no-repeat,
-    url("../img/Barril.png") right 10rem bottom no-repeat, var(--preto);
-  background-size: 22.5rem;
-  color: var(--branco);
-  height: 100vh;
+.containerChuva {
+  display: flex;
+  padding: 10px;
+}
+.audioChuva {
+  width: 150px;
+  height: 35px;
+  background-color: var(--grafite);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--verde-petroleo);
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
 }
 
 #root {
@@ -34,7 +62,77 @@ body {
   align-items: center;
   height: 100%;
 }
-.homeImg {
-  width: 75%;
+
+.container-login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
   max-width: 400px;
+}
+
+.bolinhas {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.bolinha {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bolinha.ativa {
+  background-color: gray;
+}
+.container-img {
+  width: 100%;
+  max-width: 400px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #000000, #000033);
+}
+
+.rain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(white, transparent);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
 }
