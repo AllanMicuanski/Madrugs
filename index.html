@@ -1,192 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/PaginaDeLogin.css" />
-    <title>Madruga's Club</title>
-  </head>
 
-  <body>
-    <div class="background">
-      <div class="rains-container">
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-        <div class="rain"></div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="img/Barril.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/PaginaDeLogin.css" />
+  <title>Madruga's Club</title>
+</head>
 
-      <main>
-        <!-- Conteúdo principal -->
-        <div class="containerChuva">
-          <button id="audioButton" class="audioChuva" onclick="playaudio()">
-            Musica tema?
-          </button>
-          <audio id="audioChuva" src="./rain.mp3" loop></audio>
-          <audio id="audioArcticMonkeys" src="./ArcticMonkeys.mp3" loop></audio>
-        </div>
-        <div id="root"></div>
-      </main>
+<body>
+  <div class="background">
+    <div class="rains-container">
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
     </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
-      integrity="sha512-8Q6Y9XnTbOE+JNvjBQwJ2H8S+UV4uA6hiRykhdtIyDYZ2TprdNmWOUaKdGzOhyr4dCyk287OejbPvwl7lrfqrQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"
-      integrity="sha512-MOCpqoRoisCTwJ8vQQiciZv0qcpROCidek3GTFS6KTk2+y7munJIlKCVkFCYY+p3ErYFXCjmFjnfTTRSC1OHWQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.3/babel.min.js"
-      integrity="sha512-MIXku7j6pJ0hqd2T4WXZMGerp3BU9B91rfLRDp/McDBNNdnwTD+yLJaz9AHcYXT6k16dYTkG9S2KRPGxaBIfBQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <main>
+      <!-- Conteúdo principal -->
+      <div class="containerChuva">
+        <button id="audioButton" class="audioChuva" onclick="playaudio()">
+          Musica tema?
+        </button>
+        <audio id="audioChuva" src="./rain.mp3" loop></audio>
+        <audio id="audioArcticMonkeys" src="./ArcticMonkeys.mp3" loop></audio>
+      </div>
+      <div id="root"></div>
+    </main>
+  </div>
 
-    <script type="text/babel">
-      function Titulo({ children }) {
-        return <h1 className="form__titulo">{children}</h1>;
-      }
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" integrity="sha512-8Q6Y9XnTbOE+JNvjBQwJ2H8S+UV4uA6hiRykhdtIyDYZ2TprdNmWOUaKdGzOhyr4dCyk287OejbPvwl7lrfqrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" integrity="sha512-MOCpqoRoisCTwJ8vQQiciZv0qcpROCidek3GTFS6KTk2+y7munJIlKCVkFCYY+p3ErYFXCjmFjnfTTRSC1OHWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.3/babel.min.js" integrity="sha512-MIXku7j6pJ0hqd2T4WXZMGerp3BU9B91rfLRDp/McDBNNdnwTD+yLJaz9AHcYXT6k16dYTkG9S2KRPGxaBIfBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-      function Subtitulo({ children }) {
-        return <h2 className="form__texto">{children}</h2>;
-      }
+  <script type="text/babel">
+    function Titulo({ children }) {
+      return <h1 className="form__titulo">{children}</h1>;
+    }
 
-      function CampoDeDigitacao({
-        label,
-        tipo,
-        placeholder,
-        value,
-        setValor,
-        id,
-      }) {
-        return (
-          <div className="form__campo-digitacao ">
-            <label htmlFor="email">{label}</label>
-            <input
-              type={tipo}
-              placeholder={placeholder}
-              required
-              id={id}
-              value={value}
-              onChange={(evento) => setValor(evento.target.value)}
+    function Subtitulo({ children }) {
+      return <h2 className="form__texto">{children}</h2>;
+    }
+
+    function CampoDeDigitacao({
+      label,
+      tipo,
+      placeholder,
+      value,
+      setValor,
+      id,
+    }) {
+      return (
+        <div className="form__campo-digitacao ">
+          <label htmlFor="email">{label}</label>
+          <input
+            type={tipo}
+            placeholder={placeholder}
+            required
+            id={id}
+            value={value}
+            onChange={(evento) => setValor(evento.target.value)}
+          />
+        </div>
+      );
+    }
+
+    function Botao() {
+      return (
+        <button className="form__botao" type="submit">
+          Login
+        </button>
+      );
+    }
+
+    function PaginaDeLogin() {
+      const [email, setEmail] = React.useState("");
+      const [senha, setSenha] = React.useState("");
+      const [indiceAtual, setIndiceAtual] = React.useState(0);
+
+      const imagens = [
+        "./img/madruga.jpg",
+        "./img/madruga2.jpg",
+        "./img/madruga4.jpg",
+        "./img/madruga5.jpg",
+        "./img/madruga6.jpg",
+        "./img/madruga7.jpg",
+        "./img/madruga8.jpg",
+        "./img/madruga9.jpg",
+        "./img/madruga10.jpg",
+      ];
+
+      React.useEffect(() => {
+        const intervalo = setInterval(() => {
+          setIndiceAtual((indiceAtual + 1) % imagens.length);
+        }, 10000);
+        return () => clearInterval(intervalo);
+      }, [indiceAtual]);
+
+      const selecionarImagem = (indice) => {
+        setIndiceAtual(indice);
+      };
+
+      const handleLogin = (event) => {
+        event.preventDefault();
+
+        const errorMessage = document.getElementById('error-message');
+
+        // Resetando mensagens de erro
+        errorMessage.textContent = '';
+
+        // Validação simples
+        if (!email || !senha) {
+          errorMessage.textContent = 'Por favor, preencha todos os campos.';
+          return;
+        }
+
+        // Exemplo de validação
+        if (email === 'madruga@rock.com' && senha === 'rock') {
+          alert('Login bem-sucedido!');
+          window.location.href = 'gallery.html';
+        } else {
+          errorMessage.textContent = 'E-mail ou senha inválidos.';
+        }
+      };
+
+      return (
+        <div className="container-login">
+          <div className="container-img">
+            <img
+              src={imagens[indiceAtual]}
+              alt="Seu madruga"
+              className="homeImg"
             />
           </div>
-        );
-      }
-
-      function Botao() {
-        return (
-          <button className="form__botao" type="submit">
-            Login
-          </button>
-        );
-      }
-
-      function PaginaDeLogin() {
-        const [email, setEmail] = React.useState("");
-        const [senha, setSenha] = React.useState("");
-        const [indiceAtual, setIndiceAtual] = React.useState(0);
-
-        const imagens = [
-          "./img/madruga.jpg",
-          "./img/madruga2.jpg",
-          "./img/madruga4.jpg",
-          "./img/madruga5.jpg",
-          "./img/madruga6.jpg",
-          "./img/madruga7.jpg",
-          "./img/madruga8.jpg",
-          "./img/madruga9.jpg",
-        ];
-
-        React.useEffect(() => {
-          const intervalo = setInterval(() => {
-            setIndiceAtual((indiceAtual + 1) % imagens.length);
-          }, 10000);
-          return () => clearInterval(intervalo);
-        }, [indiceAtual]);
-
-        const selecionarImagem = (indice) => {
-          setIndiceAtual(indice);
-        };
-
-        return (
-          <div className="container-login">
-            <div className="container-img">
-              <img
-                src={imagens[indiceAtual]}
-                alt="Seu madruga"
-                className="homeImg"
-              />
-            </div>
-            <div className="bolinhas">
-              {imagens.map((_, indice) => (
-                <div
-                  key={indice}
-                  className={`bolinha ${indice === indiceAtual ? "ativa" : ""}`}
-                  onClick={() => selecionarImagem(indice)}
-                ></div>
-              ))}
-            </div>
-            <section>
-              <form>
-                <Subtitulo>Bem-vindo ao fã clube do Madruga!</Subtitulo>
-                <CampoDeDigitacao
-                  label="E-mail ou usuário"
-                  tipo="email"
-                  placeholder="Digite seu e-mail."
-                  value={email}
-                  setValor={setEmail}
-                  id="email"
-                />
-                <CampoDeDigitacao
-                  label="Senha"
-                  tipo="password"
-                  placeholder="Digite sua senha."
-                  value={senha}
-                  setValor={setSenha}
-                  id="senha"
-                />
-                <Botao />
-              </form>
-            </section>
+          <div className="bolinhas">
+            {imagens.map((_, indice) => (
+              <div
+                key={indice}
+                className={`bolinha ${indice === indiceAtual ? "ativa" : ""}`}
+                onClick={() => selecionarImagem(indice)}
+              ></div>
+            ))}
           </div>
-        );
-      }
-
-      ReactDOM.createRoot(document.getElementById("root")).render(
-        <PaginaDeLogin />
+          <section>
+            <form id="loginForm" onSubmit={handleLogin}>
+              <Subtitulo>Bem-vindo ao fã clube do Madruga!</Subtitulo>
+              <CampoDeDigitacao
+                label="E-mail ou usuário"
+                tipo="email"
+                placeholder="Digite seu e-mail."
+                value={email}
+                setValor={setEmail}
+                id="email"
+              />
+              <CampoDeDigitacao
+                label="Senha"
+                tipo="password"
+                placeholder="Digite sua senha."
+                value={senha}
+                setValor={setSenha}
+                id="senha"
+              />
+              <Botao />
+              <p id="error-message" style={{ color: 'red' }}></p>
+            </form>
+          </section>
+        </div>
       );
-    </script>
-    <script src="./script/audio.js"></script>
-    <script src="./script/rain.js"></script>
-  </body>
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(
+      <PaginaDeLogin />
+    );
+  </script>
+
+  <script src="./script/audio.js"></script>
+  <script src="./script/rain.js"></script>
+</body>
+
 </html>

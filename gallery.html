@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/gallery.css" />
+  <link rel="icon" href="img/Barril.png" type="image/x-icon">
+  <title>Madruga pictures</title>
+</head>
+
+<body>
+  <div class="background">
+    <div class="rains-container">
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+      <div class="rain"></div>
+    </div>
+
+    <div class="gallery-container">
+      <button id="backButton" class="back-button">Voltar ao Login</button>
+
+      <h1>Selecione as favoritas do Madruga</h1>
+
+      <!-- Galeria Principal -->
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./img/madruga1.jpg" alt="Seu Madruga 1" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga2.jpg" alt="Seu Madruga 2" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga3.jpg" alt="Seu Madruga 3" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga4.jpg" alt="Seu Madruga 4" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga5.jpg" alt="Seu Madruga 5" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga6.jpg" alt="Seu Madruga 6" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga7.jpg" alt="Seu Madruga 7" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga8.jpg" alt="Seu Madruga 8" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga9.jpg" alt="Seu Madruga 9" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/madruga10.jpg" alt="Seu Madruga 10" onclick="openModal(this)">
+          <button class="favorite-btn" onclick="toggleFavorite(event, this)">⭐</button>
+        </div>
+      </div>
+
+      <!-- Favoritos -->
+      <h2>Favoritos</h2>
+      <div id="favorites" class="gallery"></div>
+
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" />
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <script src="./script/gallery.js"></script>
+    <script src="./script/rain.js"></script>
+</body>
+
+</html>

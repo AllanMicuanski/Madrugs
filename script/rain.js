@@ -1,4 +1,4 @@
-const rains = document.querySelectorAll(".rain");
+const rains = document.querySelectorAll('.rain');
 
 const getRandonNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
